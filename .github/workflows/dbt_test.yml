@@ -1,0 +1,28 @@
+name: dbt tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Extract
+        run: python extract.py
+
+      - name: Load
+        run: python load.py
+
+      - name: dbt run and test
+        working-directory: weather_dbt
+        run: |
+          dbt run
+          dbt test
