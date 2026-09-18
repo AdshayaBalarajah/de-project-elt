@@ -1,0 +1,6 @@
+venv/
+*.duckdb
+__pycache__/
+weather_dbt/target/
+weather_dbt/logs/
+weather_dbt/dbt_packages/

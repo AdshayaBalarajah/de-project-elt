@@ -1,0 +1,32 @@
+[0m12:31:28.067755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204410A0EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002044333E430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002044333E1F0>]}
+
+
+============================== 12:31:28.074759 | cf5f2da5-3f6e-4c92-8bfa-2417cd763bb0 ==============================
+[0m12:31:28.074759 [info ] [MainThread]: Running with dbt=1.10.23
+[0m12:31:28.076268 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'target_path': 'None', 'invocation_command': 'dbt init weather_dbt', 'version_check': 'True', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'log_path': 'logs', 'no_print': 'None', 'warn_error': 'None', 'write_json': 'True', 'introspect': 'True', 'log_format': 'default', 'partial_parse': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m12:31:28.131928 [warn ] [MainThread]: [[33mWARNING[0m]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. Please upgrade to a newer supported version of dbt for new projects: https://docs.getdbt.com/docs/dbt-versions?utm_source=dbt-cli
+[0m12:31:28.133927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'cf5f2da5-3f6e-4c92-8bfa-2417cd763bb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002044333E430>]}
+[0m12:31:28.135926 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\user\.dbt
+[0m12:31:28.141269 [debug] [MainThread]: Starter project path: C:\Users\user\de-project-elt\venv\lib\site-packages\dbt\include\starter_project
+[0m12:31:28.279837 [info ] [MainThread]: 
+Your new dbt project "weather_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:31:28.280810 [info ] [MainThread]: Setting up your profile.
+[0m12:31:48.959539 [info ] [MainThread]: Profile weather_dbt written to C:\Users\user\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m12:31:48.960427 [debug] [MainThread]: Command `dbt init` succeeded at 12:31:48.960427 after 21.03 seconds
+[0m12:31:48.961512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204410A0EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020443443F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002044333E130>]}
+[0m12:31:48.962426 [debug] [MainThread]: Flushing usage events
+[0m12:31:52.492131 [debug] [MainThread]: An error was encountered while trying to flush usage events
